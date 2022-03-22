@@ -121,15 +121,87 @@
 }
 /* body */
 
+/* Размеры основных блоков в теле */
+
+.body__wrapper {
+    width: 100%;
+    height: 100%;
+    font-family: 'Commissioner';
+}
+
 .body__content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    max-width: 1088px;
-    max-height: 580px;
+    max-width: 56.66666666666%;
+    max-height: 67.148594378%;
     height: 100%;
     width: 100%;
 }
+
+.content__text {
+    max-height: 69.3779904306%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-left: 10px #0c1e2b;
+    padding: 37px;
+    padding-bottom: 40px;
+    padding-left: 70px;
+    padding-right: 0px;
+    margin-left: 100px;
+    text-align: left;
+    vertical-align: center;
+}
+
+.body__getting {
+    max-height: 32.851405622%;
+    width: 100%;
+    height: 100%;
+    background-color:#0C1E2B;
+}
+
+/* Текста в левом верхнем блоке */
+.first-text {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+.second-text {
+    font-size: 44px;
+    line-height: 53.81px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.third-text {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.thouth-text {
+    font-size: 26px;
+    line-height: 31.8px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+/* Кнопка */
+
+.content__btn {
+    background-color: #F8E08E;
+}
+
+.content__svg {
+    background-color: #FFF3CA;
+}
+
+/* Блок "Что вы получаете" */
+
+
 
 /* footer */
 .footer {
@@ -139,6 +211,7 @@
     padding-right: 95px;
     height: 180px;
     font-family: 'Commissioner';
+    font-style: normal;
 }
 .footer__wrapper {
     display: flex;
@@ -178,6 +251,7 @@
     margin: 0px;
     color: #B4B5B7;
     font-size: 16px;
+    line-height: 20px;
 }
 
 .footer__projects {
