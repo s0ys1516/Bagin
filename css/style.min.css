@@ -52,39 +52,44 @@
     border:2px;
     border-color: #F8E08E;
     white-space: nowrap;
+}
 
-    /* Кнопка */
-
+.price-list__text {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    text-decoration: none;
 }
 
 .social-networks {
     width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .social-networks__text {
-    margin-bottom:15px;
+    margin-bottom:0px;
     font-size: 14px;
     line-height: 17px;
+    width: 100%;
+    max-height: 18.4782608696%;
+    height: 100%;
 }
 .social-networks__icons {
     display: flex;
     justify-content: space-between;
+    max-height: 65.2173913043%;
+    height: 100%;
 }
 
 .social-networks__telegram,
 .social-networks__whatsapp {
     width: 140px;
-
-}
-
-.whatsapp__text,
-.telegram__text {
     padding: 20px;
     padding-left: 16px;
     padding-right: 10px;
-    width: 100%;
+    text-decoration: none;
 }
 
 .whatsapp_icon,
@@ -192,11 +197,14 @@
 /* Кнопка */
 
 .content__btn {
-    background-color: #F8E08E;
+    max-height: 18.1034482759%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .content__svg {
     background-color: #FFF3CA;
+    height: 100%;
 }
 
 /* Блок "Что вы получаете" */
