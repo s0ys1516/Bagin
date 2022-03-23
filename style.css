@@ -6,6 +6,11 @@
 .yellow_bcg {
     background-color: #F8E08E;
 }
+
+body {
+    font-family: 'Commissioner';
+    font-style: normal;
+}
  /* header */
 
 .header {
@@ -14,8 +19,6 @@
     padding-left: 94px;
     padding-right: 95px;
     padding-top: 40px;
-    font-family: 'Commissioner';
-    font-style: normal;
 }
 
 .header__wrapper {
@@ -35,9 +38,6 @@
     max-width: 233px;
     margin-bottom: 0px;
     margin-top: 22px;
-
-    /* p4 */
-
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -131,7 +131,6 @@
 .body__wrapper {
     width: 100%;
     height: 100%;
-    font-family: 'Commissioner';
 }
 
 .body__content {
@@ -204,6 +203,7 @@
 
 .content__svg {
     background-color: #FFF3CA;
+    background-image: url(img/svg/arrow.svg);
     height: 100%;
 }
 
@@ -218,8 +218,6 @@
     padding-left: 95px;
     padding-right: 95px;
     height: 180px;
-    font-family: 'Commissioner';
-    font-style: normal;
 }
 .footer__wrapper {
     display: flex;
@@ -313,4 +311,3 @@
     font-weight: 500;
     color: #fff;
 }
-
