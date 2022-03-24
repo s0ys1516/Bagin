@@ -14,27 +14,26 @@ body {
  /* header */
 
 .header {
-    height: 132px;
     display: flex;
     padding-left: 94px;
     padding-right: 95px;
     padding-top: 40px;
+    padding-bottom: 70px;
 }
 
-.header__wrapper {
+.header-wrapper {
     display: flex;
-    height: 100%;
     align-items: start;
     width: 100%;
     justify-content: space-between;
 }
 
-.header__logo {
+.header-logo {
     margin-top: 32px;
     width: 190px;
 }
 
-.header__text {
+.header-text {
     max-width: 233px;
     margin-bottom: 0px;
     margin-top: 22px;
@@ -43,7 +42,7 @@ body {
     line-height: 17px;
 }
 
-.header__price-list {
+.header-price-list {
     width:410px;
     margin-top: 6px;
     padding: 30px;
@@ -54,7 +53,7 @@ body {
     white-space: nowrap;
 }
 
-.price-list__text {
+.price-list-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -63,28 +62,24 @@ body {
 
 .social-networks {
     width: 300px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.social-networks__text {
+.social-networks-text {
     margin-bottom:0px;
     font-size: 14px;
     line-height: 17px;
     width: 100%;
-    max-height: 18.4782608696%;
-    height: 100%;
-}
-.social-networks__icons {
-    display: flex;
-    justify-content: space-between;
-    max-height: 65.2173913043%;
-    height: 100%;
 }
 
-.social-networks__telegram,
-.social-networks__whatsapp {
+.social-networks-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-networks-telegram,
+.social-networks-whatsapp {
     width: 140px;
     padding: 20px;
     padding-left: 16px;
@@ -92,34 +87,34 @@ body {
     text-decoration: none;
 }
 
-.whatsapp_icon,
-.telegram_icon {
+.whatsapp-icon,
+.telegram-icon {
     width: 30px;
     height: 26.13px;
     padding-top: 16.94px;
 }
 
-.header__col--right {
+.header-col-right {
     margin-top: 6px;
     max-width:237px;
     align-items: center;
 }
 
-.phone__non-button {
+.phone-non-button {
     margin-bottom: 0px;
     text-align: center;
 }
 
-.phone__text {
+.phone-text {
     font-size: 14px;
 }
 
-.phone__link {
+.phone-link {
     font-size: 26px;
     font-weight: 600;
 }
 
-.header__btn {
+.header-btn {
     width: 100%;
     background-color: #fff;
     border: none;
@@ -128,21 +123,16 @@ body {
 
 /* Размеры основных блоков в теле */
 
-.body__wrapper {
+.body-wrapper {
     width: 100%;
-    height: 100%;
 }
 
-.body__content {
+.body-content {
     max-width: 56.66666666666%;
-    max-height: 67.148594378%;
-    height: 100%;
     width: 100%;
 }
 
-.content__text {
-    max-height: 69.3779904306%;
-    height: 100%;
+.content-text {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -157,10 +147,8 @@ body {
     vertical-align: center;
 }
 
-.body__getting {
-    max-height: 32.851405622%;
+.body-getting {
     width: 100%;
-    height: 100%;
     background-color:#0C1E2B;
 }
 
@@ -195,16 +183,15 @@ body {
 
 /* Кнопка */
 
-.content__btn {
-    max-height: 18.1034482759%;
+.content-btn {
     display: flex;
     justify-content: space-between;
+    border: none;
 }
 
-.content__svg {
+.content-svg {
     background-color: #FFF3CA;
     background-image: url(img/svg/arrow.svg);
-    height: 100%;
 }
 
 /* Блок "Что вы получаете" */
@@ -217,22 +204,20 @@ body {
     padding: 40px;
     padding-left: 95px;
     padding-right: 95px;
-    height: 180px;
 }
-.footer__wrapper {
+.footer-wrapper {
     display: flex;
-    height: 100%;
     align-items: start;
     width: 100%;
     justify-content: space-between;
 }
 
-.footer__logo {
+.footer-logo {
     margin-top: 36px;
     width: 190px;
 }
 
-.footer__text {
+.footer-text {
     max-width: 226px;
     margin-bottom: 0px;
     margin-top: 24px;
@@ -244,7 +229,7 @@ body {
     line-height: 17px;
 }
 
-.footer__ur-data{
+.footer-ur-data{
     max-width: 190px;
     width: 100%;
     margin-top: 20px;
@@ -253,30 +238,30 @@ body {
     flex-direction: column;
 }
 
-.ur-data__text {
+.ur-data-text {
     margin: 0px;
     color: #B4B5B7;
     font-size: 16px;
     line-height: 20px;
 }
 
-.footer__projects {
+.footer-projects {
     max-width: 230px;
     width: 100%;
 }
 
-.projects__text {
+.projects-text {
     margin-bottom: 6px;
 }
 
-.projects__link {
+.projects-link {
     display: flex;
     justify-content: space-between;
     width: 100%;
 
 }
 
-.footer__col--right {
+.footer-col-right {
     margin-top: 28px;
     margin-bottom: 20px;
     max-width:237px;
@@ -284,20 +269,20 @@ body {
     align-items: center;
 }
 
-.footer__phone {
+.footer-phone {
     margin: 0px;
 }
 
-.phone-footer__text {
+.phone-footer-text {
     font-size: 16px;
 }
 
-.phone-footer__number {
+.phone-footer-number {
     font-size: 26px;
     font-weight: 600;
 }
 
-.footer__callback {
+.footer-callback {
     max-width: 190px;
     margin-top: 28px;
     margin-bottom: 12px;
@@ -307,7 +292,7 @@ body {
     background-color: #0C1E2B;
 }
 
-.callback__text {
+.callback-text {
     font-weight: 500;
     color: #fff;
 }
