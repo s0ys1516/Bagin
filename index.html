@@ -22,6 +22,9 @@
   <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="style.css">
   <title>FirstIntegration</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800&display=swap');
+  </style>
 </head>
 
 <body>
@@ -51,11 +54,9 @@
             <a class="social-networks-whatsapp yellow_bcg"  href="">WhatsApp</a>
           </div>
         </div>  
-        <div class="header-col header-col--right">
-          <p class="phone-non-button">
-            <span class="phone-text">Мы работает с 9:00 до 19:00</span>
-            <a class="phone__link" href="tel:+">+7(495)566-65-65</a>
-          </p>
+        <div class="header-col header-col-last">
+          <p class="phone-text">Мы работает с 9:00 до 19:00</p>
+          <p class="phone-number">+7 (495) 566-65-65</p>
           <button class="header-btn btn" type="button" data-modal="callback">
             <i class="header-btn-text">Перезвоните мне</i>
           </button>  
@@ -64,17 +65,17 @@
       </div>
     </header>
     <main>
-      <div class="body-wrapper">
-        <div class="body-content">
-          <div class="content-text">
-            <p class="first-text">Оптимальные конструктивные и технологические решения</p>
-            <p class="second-text">Комплексное проектирование [ангаров] из металлоконструкций под ключ с экономией до 30% за счёт передовых технологий</p>
-            <p class="third-text">Ответьте на 7 вопросов и мы сформирует предварительный расчёт стоимости разработки проекта быстровозводимого ангара в течение 30 минут:</p>
+      <div class="main-wrapper">
+        <div class="main-content">
+          <div class="content">
+            <p class="content-text">Оптимальные конструктивные и технологические решения</p>
+            <h1>Комплексное проектирование [ангаров] из металлоконструкций под ключ с экономией до 30% за счёт передовых технологий</h1>
+            <p class="content-questions">Ответьте на 7 вопросов и мы сформирует предварительный расчёт стоимости разработки проекта быстровозводимого ангара в течение 30 минут:</p>
             <button class="content-btn yellow_bcg" type="button">
-              <span class="thouth-text">Получить расчёт стоимости проекта и прайс-лист</span>
-              <span class="content-svg"></span>
-            </span>  
-        </div>  
+              <span class="btn-text">Получить расчёт стоимости проекта и прайс-лист</span>
+              <span class="btn-arrows"></span>
+            </button>
+          </div>  
         </div>
         <!--
         <div class="container">
@@ -82,7 +83,17 @@
           <p><a href="#" data-modal="success">modal--success link</a></p>
         </div>
         -->
-        <div class="body-getting">
+        <div class="main-getting">
+          <h1 class="gettint-subtitle">Что вы получаете, работая с нами:</h1>
+          <div class="getting-adv">
+            <p class="advantage advantage-creating">Полный комплект рабочей документации на изготовление, согласно ГОСТ Р 21.101-2020</p>
+            <p class="advantage advantage-building">Полный комплект проектной документации на строительство, согласно ГОСТ Р 21.101-2020</p>
+            <div class="advantage-w-s">
+              <p class="advantage advantage-star">Разработанную документацию, согласно “Градостроительного кодекса” Российской Федерации №190-ФЗ от 29.12.2004 г. *</p>
+              <p class="star">*- с изменениями и доп. вступ. в силу с 01.03.2022</p>
+            </div>
+            <p class="advantage advantage-3d">3D-модель проектируемого объекта Revit</p>
+          </div>
         </div>
       </div>  
     </main>
@@ -91,7 +102,7 @@
         <a class="footer-logo" aria-label="Переход на главный сайт ">
           <img src="img/svg/logo.svg" alt="Логотип Mansio Group">
         </a>
-        <div class="footer-col footer__col--content">
+        <div class="footer-col footer-col-content">
           <p class="footer-text">Комплексное проектирование промышленных и частных объектов из металлоконструкций</p>
         </div>
         <div class="footer-ur-data">
@@ -104,15 +115,15 @@
             Наши недавние проекты:
           </p>
           <div class="projects-link">
-            <img class="projects-img" src="img/content/project1.png" alt="Первый проект">
-            <img class="projects-img" src="img/content/project2.png" alt="Первый проект">
-            <img class="projects-img" src="img/content/project3.png" alt="Первый проект">
+            <img class="projects-img project1" src="img/content/project1.png" alt="Первый проект">
+            <img class="projects-img project2" src="img/content/project2.png" alt="Первый проект">
+            <img class="projects-img project3" src="img/content/project3.png" alt="Первый проект">
           </div> 
         </div>
-        <div class="footer-col footer-col--right">
+        <div class="footer-col footer-col-right">
           <p class="footer-phone">
             <span class="phone-footer-text">Мы работает с 9:00 до 19:00</span>
-            <span class="phone-footer-number">+7(495)566-65-65</span>
+            <span class="phone-footer-number">+7 (495) 566-65-65</span>
           </p>
         </div>
         <div class="footer-callback">
