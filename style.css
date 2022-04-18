@@ -23,7 +23,12 @@ body {
 
 .header-wrapper {
     display: flex;
+    justify-content: space-between;
     width: 100%;
+}
+
+.header-information {
+    display: flex;
 }
 
 .header-logo {
@@ -33,7 +38,6 @@ body {
 }
 
 .header-col-content {
-    margin-right: 97px;
 }
 
 .header-text {
@@ -47,21 +51,24 @@ body {
 
 .header-price-list {
     width:410px;
+    height: 100%;
     margin-top: 6px;
-    margin-right: 140px;
-    padding: 25px;
-    padding-left: 53px;
-    padding-right: 53px;
-    border:2px;
-    border-color: #F8E08E;
+    margin-right: 43px;
+    padding-top: 25px;
+    padding-left: 50.5px;
+    padding-right: 52px;
+    padding-bottom: 28px;
+    border:2px solid #F8E08E;
     white-space: nowrap;
 }
 
 .price-list-text {
+    padding-top: 3px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
+    margin: 0;
 }
 
 .social-networks {
@@ -69,7 +76,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 93px;
 }
 .social-networks-text {
     margin-bottom:15px;
@@ -90,6 +96,20 @@ body {
     padding-left: 16px;
     padding-right: 10px;
     text-decoration: none;
+    font-weight: 500;
+}
+.social-networks-telegram {
+    background-image: url(img/svg/tg.svg);
+    background-repeat: no-repeat;
+    background-position: center right 16px;
+    margin-right: 10px;
+}
+
+.social-networks-whatsapp {
+    background-image: url(img/svg/wa.svg);
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    padding-left: 11px;
 }
 
 .whatsapp-icon,
@@ -108,18 +128,25 @@ body {
     font-size: 14px;
     line-height: 17.12px;
     margin-bottom: 5px;
+    text-transform: lowercase;
+    margin-left: 0.2px;
+    margin-bottom: 6px;
 }
 
 .phone-number {
     font-size: 26px;
     font-weight: 600;
     line-height: 31.8px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    white-space: nowrap;
 }
 
 .header-btn-text {
-    text-decoration: underline;
-    line-height: 19.57px;
+    border-bottom: 1px solid #0c1e2b;
+    padding-bottom: 1px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 .header-btn {
@@ -140,6 +167,7 @@ body {
 }
 
 .main-content {
+    position: relative;
     width: 100%;
     padding-left: 135px;
     padding-right: 10px;
@@ -148,11 +176,11 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    border-left: 10px #0c1e2b;
+    border-left: 1px solid #0c1e2b;
     text-align: left;
     vertical-align: center;
-    padding-top: 37px;
-    padding-left: 70px;
+    padding-top: 38px;
+    padding-left: 69px;
     padding-bottom: 40px;
     margin-right: 687px;
     box-sizing: content-box;
@@ -169,6 +197,7 @@ body {
     margin-bottom: 40px;
     margin-right: 295px;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 h1 {
@@ -176,13 +205,13 @@ h1 {
     line-height: 53.81px;
     font-weight: 800;
     margin: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
 
 .content-questions {
     font-size: 26px;
     line-height: 32px;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
     margin-right: 28px;
     font-weight: 400;
 }
@@ -191,26 +220,73 @@ h1 {
     font-size: 26px;
     line-height: 31.8px;
     font-weight: 600;
+    white-space: nowrap;
     margin: 0px;
     padding: 35.6px;
-    padding-left: 41.5px;
-    padding-right: 41.5px;
+    padding-left: 35.5px;
+    padding-right: 200px;
 }
 
 /* Кнопка */
 
 .content-btn {
     display: flex;
+    max-width: 948px;
     border: 0px;
-    margin-right: 58px;
+    margin-right: 24px;
+    position: relative;
+    text-transform: uppercase;
 }
 
 .btn-arrows {
     background-color: #FFF3CA;
     background-image: url(img/svg/arrow.svg);
-    padding: 43.5px;
-    padding-left: 46px;
-    padding-right: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 110px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+}
+
+/* Блок информации о проектировщике */
+.person-information{
+    display: flex;
+    flex-direction: column;
+    max-width: 228px;
+    width: 100%;
+    position: absolute;
+    bottom: 59px;
+    right: 719px;
+}
+
+.person-profession,
+.person-standing,
+.person-projects {
+    line-height: 20px;
+    margin: 0;
+}
+
+.person-name{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 7px;
+}
+
+.person-experience{
+    margin: 0;
+    margin-right: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-photo {
+    position: absolute;
+    bottom: 0px;
+    right: 11px;
 }
 
 /* Блок "Что вы получаете" */
@@ -231,9 +307,9 @@ h1 {
 }
 
 .gettint-subtitle {
-    margin-top: 70px;
+    margin-top: 73px;
     margin-left: 94px;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
 }
 
 .advantage {
@@ -241,6 +317,9 @@ h1 {
     line-height: 27.25px;
     font-weight: 400;
     margin: 0px;
+    background-image: url(img/svg/dot.svg);
+    background-repeat: no-repeat;
+    background-position: top 5px;
 }
 
 .advantage-w-s {
@@ -253,6 +332,8 @@ h1 {
 
 .advantage-building {
     margin-bottom: 82px;
+    margin-right: 50px;
+
 }
 
 .advantage-3d {
@@ -260,9 +341,8 @@ h1 {
 }
 
 .advantage-creating,
-.advantage-building,
 .advantage-w-s {
-    margin-right: 50px;
+    margin-right: 49px;
 }
 
 .advantage-creating,
@@ -275,6 +355,8 @@ h1 {
 .star{
     line-height: 19.57px;
     margin: 0px;
+    font-size: 16px;
+    color: #B4B5B7;
 }
 
 .advantage-star {
@@ -358,9 +440,13 @@ h1 {
     max-width: 237px;
     margin-top: 28px;
     margin-bottom: 20px;
-    margin-right: 83px;
+    margin-right: 93px;
     width: 100%;
     align-items: center;
+}
+
+.footer-communication {
+    display: flex;
 }
 
 .footer-phone {
@@ -373,11 +459,14 @@ h1 {
 .phone-footer-text {
     font-size: 16px;
     line-height: 19.57px;
+    white-space: nowrap;
 }
 
 .phone-footer-number {
     font-size: 26px;
     font-weight: 600;
+    white-space: nowrap;
+    line-height: 31.8px;
 }
 
 .footer-callback {
@@ -385,6 +474,7 @@ h1 {
     margin-top: 28px;
     margin-bottom: 12px;
     padding: 20px;
+    padding-bottom: 18px;
     padding-left: 29.5px;
     padding-right: 29.5px;
     background-color: #0C1E2B;

@@ -2,13 +2,13 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="FirstMansioIntegration">
-  <!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
-  <!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
-  <!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="FirstMansioIntegration">
+	<!-- генерируйте favicon тут - https://realfavicongenerator.net/ -->
+	<!-- ! в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"-->
+	<!-- <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 <link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
 <link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
 <link href="favicon/site.webmanifest" rel="manifest" crossorigin="use-credentials">
@@ -18,148 +18,173 @@
 <meta content="favicon/browserconfig.xml" name="msapplication-config">
 <meta content="#ffffff" name="theme-color">
  -->
-  <!-- используйте только для шрифта находящегося на первом экране -->
-  <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="style.css">
-  <title>FirstIntegration</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800&display=swap');
-  </style>
+	<!-- используйте только для шрифта находящегося на первом экране -->
+	<!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="style.css">
+	<title>FirstIntegration</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800&display=swap');
+	</style>
 </head>
 
 <body>
-  <div style="display: none;">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <symbol id="icon-close" viewBox="0 0 20 20">
-        <path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
-      </symbol>
-    </svg>
-  </div>
-  <div class="wrapper">
-    <header class="header ">
-      <div class="header-wrapper">
-        <a class="header-logo" aria-label="Переход на главный сайт ">
-          <img src="img/svg/logo.svg" alt="Логотип Mansio Group">
-        </a>
-        <div class="header-col header-col-content">
-          <p class="header-text">Комплексное проектирование промышленных и частных объектов из металлоконструкций</p>
-        </div>
-        <div class="header-price-list" >
-          <a class="price-list-text" href="">Скачать прайс-лист по проектированию</a>
-        </div>
-        <div class="header-col social-networks">
-          <p class="social-networks-text">Задайте вопрос проектировщику онлайн:</p>
-          <div class="social-networks-icons">
-            <a class="social-networks-telegram yellow_bcg"  href="">Telegram</a>
-            <a class="social-networks-whatsapp yellow_bcg"  href="">WhatsApp</a>
-          </div>
-        </div>  
-        <div class="header-col header-col-last">
-          <p class="phone-text">Мы работает с 9:00 до 19:00</p>
-          <p class="phone-number">+7 (495) 566-65-65</p>
-          <button class="header-btn btn" type="button" data-modal="callback">
-            <i class="header-btn-text">Перезвоните мне</i>
-          </button>  
-        </div>
-        
-      </div>
-    </header>
-    <main>
-      <div class="main-wrapper">
-        <div class="main-content">
-          <div class="content">
-            <p class="content-text">Оптимальные конструктивные и технологические решения</p>
-            <h1>Комплексное проектирование [ангаров] из металлоконструкций под ключ с экономией до 30% за счёт передовых технологий</h1>
-            <p class="content-questions">Ответьте на 7 вопросов и мы сформирует предварительный расчёт стоимости разработки проекта быстровозводимого ангара в течение 30 минут:</p>
-            <button class="content-btn yellow_bcg" type="button">
-              <span class="btn-text">Получить расчёт стоимости проекта и прайс-лист</span>
-              <span class="btn-arrows"></span>
-            </button>
-          </div>  
-        </div>
-        <!--
-        <div class="container">
-          <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-          <p><a href="#" data-modal="success">modal--success link</a></p>
-        </div>
-        -->
-        <div class="main-getting">
-          <h1 class="gettint-subtitle">Что вы получаете, работая с нами:</h1>
-          <div class="getting-adv">
-            <p class="advantage advantage-creating">Полный комплект рабочей документации на изготовление, согласно ГОСТ Р 21.101-2020</p>
-            <p class="advantage advantage-building">Полный комплект проектной документации на строительство, согласно ГОСТ Р 21.101-2020</p>
-            <div class="advantage-w-s">
-              <p class="advantage advantage-star">Разработанную документацию, согласно “Градостроительного кодекса” Российской Федерации №190-ФЗ от 29.12.2004 г. *</p>
-              <p class="star">*- с изменениями и доп. вступ. в силу с 01.03.2022</p>
-            </div>
-            <p class="advantage advantage-3d">3D-модель проектируемого объекта Revit</p>
-          </div>
-        </div>
-      </div>  
-    </main>
-    <footer class="footer">
-      <div class="footer-wrapper">
-        <a class="footer-logo" aria-label="Переход на главный сайт ">
-          <img src="img/svg/logo.svg" alt="Логотип Mansio Group">
-        </a>
-        <div class="footer-col footer-col-content">
-          <p class="footer-text">Комплексное проектирование промышленных и частных объектов из металлоконструкций</p>
-        </div>
-        <div class="footer-ur-data">
-          <p class="ur-data-text">ООО “АБС”</p>
-          <p class="ur-data-text">ИНН 45465465465</p>
-          <p class="ur-data-text">ОГРН 654654564645656</p>
-        </div>
-        <div class="footer-projects">
-          <p class="projects-text">
-            Наши недавние проекты:
-          </p>
-          <div class="projects-link">
-            <img class="projects-img project1" src="img/content/project1.png" alt="Первый проект">
-            <img class="projects-img project2" src="img/content/project2.png" alt="Первый проект">
-            <img class="projects-img project3" src="img/content/project3.png" alt="Первый проект">
-          </div> 
-        </div>
-        <div class="footer-col footer-col-right">
-          <p class="footer-phone">
-            <span class="phone-footer-text">Мы работает с 9:00 до 19:00</span>
-            <span class="phone-footer-number">+7 (495) 566-65-65</span>
-          </p>
-        </div>
-        <div class="footer-callback">
-            <a class="callback"  href="tel:+7(495)566-65-65"><span class="callback-text">Перезвоните мне</span></a>
-        </div>
-      </div>
-    </footer> 
-    <div class="modal modal--preload modal--feedback    ">
-      <div class="modal__wrapper">
-        <div class="modal__overlay"></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
-            <svg width="15" height="15">
-              <use xlink:href="#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
-      <div class="modal__wrapper">
-        <div class="modal__overlay"></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
-            <svg width="15" height="15">
-              <use xlink:href="#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+	<div style="display: none;">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<symbol id="icon-close" viewBox="0 0 20 20">
+				<path
+					d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z" />
+			</symbol>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<header class="header ">
+			<div class="header-wrapper">
+				<div class="header-information">
+					<a class="header-logo" aria-label="Переход на главный сайт ">
+						<img src="img/svg/logo.svg" alt="Логотип Mansio Group">
+					</a>
+					<div class="header-col header-col-content">
+						<p class="header-text">Комплексное проектирование промышленных и частных объектов из
+							металлоконструкций</p>
+					</div>
+				</div>
+				<div class="header-price-list">
+					<p class="price-list-text">Скачать прайс-лист по проектированию</p>
+				</div>
+				<div class="header-col social-networks">
+					<p class="social-networks-text">Задайте вопрос проектировщику онлайн:</p>
+					<div class="social-networks-icons">
+						<a class="social-networks-telegram yellow_bcg" href="">Telegram</a>
+						<a class="social-networks-whatsapp yellow_bcg" href="">WhatsApp</a>
+					</div>
+				</div>
+				<div class="header-col header-col-last">
+					<p class="phone-text">Мы работаем с 9:00 до 19:00</p>
+					<p class="phone-number">+7 (495) 566-65-65</p>
+					<button class="header-btn btn" type="button" data-modal="callback">
+						<i class="header-btn-text">Перезвоните мне</i>
+					</button>
+				</div>
+
+			</div>
+		</header>
+		<main>
+			<div class="main-wrapper">
+				<div class="main-content">
+					<div class="content">
+						<p class="content-text">Оптимальные конструктивные и технологические решения</p>
+						<h1>Комплексное проектирование [ангаров] из металлоконструкций под ключ с экономией до 30% за
+							счёт передовых технологий</h1>
+						<p class="content-questions">Ответьте на 7 вопросов и мы сформирует предварительный расчёт
+							стоимости разработки проекта быстровозводимого ангара в течение 30 минут:</p>
+						<button class="content-btn yellow_bcg" type="button">
+							<span class="btn-text">Получить расчёт стоимости проекта и прайс-лист</span>
+							<span class="btn-arrows"></span>
+						</button>
+					</div>
+					<div class="person-information">
+						<p class="person-profession">Проектировщик</p>
+						<p class="person-name">Багин Сергей</p>
+						<div class="person-experience">
+							<p class="person-standing">Стаж: 15 лет</p>
+							<p class="person-projects">Проектов: 267</p>
+						</div>
+					</div>
+					<div class="person-photo">
+						<img src="../build/img/content/bagin.png" alt="Проектировщик Багин Сергей">
+					</div>
+				</div>
+				<!--
+				<div class="container">
+					<p><a href="#" data-modal="feedback">modal--feedback link</a></p>
+					<p><a href="#" data-modal="success">modal--success link</a></p>
+				</div>
+				-->
+				<div class="main-getting">
+					<h1 class="gettint-subtitle">Что вы получаете, работая с нами:</h1>
+					<div class="getting-adv">
+						<p class="advantage advantage-creating">Полный комплект рабочей документации на изготовление,
+							согласно ГОСТ Р 21.101-2020</p>
+						<p class="advantage advantage-building">Полный комплект проектной документации на строительство,
+							согласно ГОСТ Р 21.101-2020</p>
+						<div class="advantage advantage-w-s">
+							<p class="advantage-star">Разработанную документацию, согласно “Градостроительного
+								кодекса” Российской Федерации №190-ФЗ от 29.12.2004 г. *</p>
+							<p class="star">*- с изменениями и доп. вступ. в силу с 01.03.2022</p>
+						</div>
+						<p class="advantage advantage-3d">3D-модель проектируемого объекта Revit</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-wrapper">
+				<a class="footer-logo" aria-label="Переход на главный сайт ">
+					<img src="img/svg/logo.svg" alt="Логотип Mansio Group">
+				</a>
+				<div class="footer-col footer-col-content">
+					<p class="footer-text">Комплексное проектирование промышленных и частных объектов из
+						металлоконструкций</p>
+				</div>
+				<div class="footer-ur-data">
+					<p class="ur-data-text">ООО “АБС”</p>
+					<p class="ur-data-text">ИНН 45465465465</p>
+					<p class="ur-data-text">ОГРН 654654564645656</p>
+				</div>
+				<div class="footer-projects">
+					<p class="projects-text">
+						Наши недавние проекты:
+					</p>
+					<div class="projects-link">
+						<img class="projects-img project1" src="img/content/project1.png" alt="Первый проект">
+						<img class="projects-img project2" src="img/content/project2.png" alt="Первый проект">
+						<img class="projects-img project3" src="img/content/project3.png" alt="Первый проект">
+					</div>
+				</div>
+				<div class="footer-communication">
+					<div class="footer-col footer-col-right">
+						<p class="footer-phone">
+							<span class="phone-footer-text">мы работает с 9:00 до 19:00</span>
+							<span class="phone-footer-number">+7 (495) 566-65-65</span>
+						</p>
+					</div>
+					<div class="footer-callback">
+						<a class="callback" href="tel:+7(495)566-65-65"><span class="callback-text">Перезвоните
+								мне</span></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="modal modal--preload modal--feedback    ">
+			<div class="modal__wrapper">
+				<div class="modal__overlay"></div>
+				<div class="modal__content">
+					<p class="modal__description">Обычная модалка</p>
+					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+						<svg width="15" height="15">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
+			<div class="modal__wrapper">
+				<div class="modal__overlay"></div>
+				<div class="modal__content">
+					<p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена
+						анимация-скейл и передан модификатор `some-mod`</p>
+					<button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+						<svg width="15" height="15">
+							<use xlink:href="#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendor.min.js"></script>
+	<script src="js/main.min.js"></script>
 </body>
 
 </html>
