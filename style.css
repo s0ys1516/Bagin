@@ -68,6 +68,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
+    text-align: center;
     margin: 0;
 }
 
@@ -162,8 +163,11 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+}
+
+main {
+    flex-grow: 0 !important;
 }
 
 .main-content {
@@ -195,7 +199,6 @@ body {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 40px;
-    margin-right: 295px;
     font-weight: 400;
     white-space: nowrap;
 }
@@ -208,15 +211,19 @@ h1 {
     margin-bottom: 41px;
 }
 
+.background-mobile {
+    display: none;
+}
+
 .content-questions {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 59px;
-    margin-right: 28px;
     font-weight: 400;
 }
 
 .btn-text {
+    max-width: 590px;
     font-size: 26px;
     line-height: 31.8px;
     font-weight: 600;
@@ -224,7 +231,6 @@ h1 {
     margin: 0px;
     padding: 35.6px;
     padding-left: 35.5px;
-    padding-right: 200px;
 }
 
 /* Кнопка */
@@ -289,6 +295,10 @@ h1 {
     right: 11px;
 }
 
+.person-photo-mobile,
+.person-information-mobile {
+    display: none;
+}
 /* Блок "Что вы получаете" */
 
 .main-getting {
@@ -301,6 +311,7 @@ h1 {
 
 .getting-adv{
     display: flex;
+    justify-content: space-between;
     margin-left: 99px;
     margin-right: 95px;
     margin-bottom: 70px;
@@ -366,13 +377,17 @@ h1 {
 /* footer */
 .footer {
     display: flex;
-    padding: 40px;
-    padding-left: 95px;
-    padding-right: 95px;
+    padding: 40px 95px 40px 95px;
+    justify-content: space-between;
 }
 .footer-wrapper {
     display: flex;
+    justify-content: space-between;
     width: 100%;
+}
+
+.footer-information {
+    display: flex;
 }
 
 .footer-logo {
@@ -391,7 +406,6 @@ h1 {
 }
 
 .footer-col-content {
-    margin-right: 104px;
     margin-bottom: 0px;
     margin-top: 24px;
     max-width: 226px;
@@ -401,9 +415,7 @@ h1 {
 .footer-ur-data{
     max-width: 190px;
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 140px;
+    margin: 20px 31px 20px 0;
     display: flex;
     flex-direction: column;
 }
@@ -416,13 +428,13 @@ h1 {
 }
 
 .footer-projects {
-    margin-right: 100px;
     max-width: 230px;
     width: 100%;
 }
 
 .projects-text {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+    line-height: 20px;
 }
 
 .projects-link {
@@ -471,10 +483,10 @@ h1 {
 
 .footer-callback {
     max-width: 190px;
+    max-height: 60px;
     margin-top: 28px;
     margin-bottom: 12px;
-    padding: 20px;
-    padding-bottom: 18px;
+    padding: 18px;
     padding-left: 29.5px;
     padding-right: 29.5px;
     background-color: #0C1E2B;
@@ -483,4 +495,482 @@ h1 {
 .callback-text {
     font-weight: 500;
     color: #fff;
+}
+
+
+@media (max-width: 1850px) {
+    .header-text,
+    .social-networks-text,
+    .footer-text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .price-list-text,
+    .header-btn-text,
+    .phone-text,
+    .person-profession,
+    .person-experience,
+    .star,
+    .ur-data-text,
+    .projects-text,
+    .phone-footer-text,
+    .footer-callback {
+        font-size: 12px;
+    }
+
+    .header-price-list {
+        margin: 0 0 0 3px;
+        padding: 16.5px 38.5px 22.5px 34.5px;
+        width: 300px;
+        line-height: 15px;
+    }
+    
+    .social-networks-text {
+        margin: 0;
+    }
+
+    .social-networks-telegram,
+    .social-networks-whatsapp {
+        font-size: 11.47px;
+    }
+
+    .header-col-last {
+        margin: 1px 0 0 0;
+    }
+
+    .phone-number,
+    .phone-footer-number {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0;
+    }
+
+    .content-text,
+    .content-questions {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    h1,
+    .person-name {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .btn-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .advantage {
+        font-size: 16px;
+    }
+
+    .header {
+        padding: 30px 83px 68.5px 75px;
+    }
+
+    .header-information {
+        margin-right: 17px;
+    }
+
+    .header-logo {
+        margin: 15px 30.12px 14px 0;
+    }
+
+    .header-text {
+        margin: 12px 0 12px 0;
+        line-height: 12.23px;
+    }
+
+    .header-col-content {
+        width: 168px;
+    }
+
+    .price-list-text {
+        line-height: 15px;
+    }
+
+    .social-networks {
+        width: 210px;
+        justify-content: flex-start;
+        margin: 2px 87px 0 0;
+    }
+
+    .social-networks-text {
+        margin-bottom: 5px;
+    }
+
+    .social-networks-telegram,
+    .social-networks-whatsapp {
+        background-size: 23px;
+    }
+
+    .social-networks-telegram{
+        padding: 13px 40.59px 13px 10.41px;
+        line-height: 14px;
+        white-space: nowrap;
+        background-position: center right 10.41px;
+    }
+
+    .social-networks-whatsapp {
+        padding: 13px 35.08px 13px 7.92px;
+        line-height: 14px;
+        white-space: nowrap;
+        background-position: center right 5.92px;
+    }
+
+    .phone-text {
+        margin: 0;
+    }
+
+    .main-content {
+        padding: 0 27px 0 116px;
+    }
+
+    .content {
+        padding: 26.5px 0 42.5px 68px;
+        margin:0 435px 134.5px 0;
+        border-left: 0.750018px solid #0c1e2b;
+    }
+
+    .content-text,
+    h1 {
+        margin-bottom: 30px
+    }
+
+    .content-questions {
+        margin-bottom: 29px;
+    }
+
+    .content-btn {
+        min-width: 698px;
+        max-width: 810px;
+        margin-right: 200px;
+    }
+
+    .btn-text {
+        padding: 27px 0 27px 15px;
+        line-height: 24.46px;
+    }
+
+    .btn-arrows {
+        width: 80px;
+        background-size: 15px;
+    }
+
+    .person-information {
+        right: 587px;
+        bottom: 40px;
+    }
+
+    .person-profession,
+    .person-standing,
+    .person-projects {
+        line-height: 15px;
+    }
+
+    .person-photo {
+        width: 35.347%;
+        right: 27px;
+    }
+
+    .gettint-subtitle {
+        margin: 50.52px 0px 36.48px 70.5px;
+        line-height: 44px;
+    }
+
+    .getting-adv {
+        margin: 0px 65px 53px 76px;
+        justify-content: space-between;
+    }
+
+    .getting-adv * {
+        padding-left: 30px;
+        line-height: 20px;
+    }
+
+    .advantage {
+        background-size: 20px 17px;
+    }
+
+    .advantage-creating {
+        width: 299px;
+        margin: 0px 30px 61px 0px;
+    } 
+
+    .advantage-building{
+        width: 296px;
+        margin: 0px 28px 61px 0px;
+    }
+
+    .advantage-w-s {
+        width: 298px;
+        margin: 0px 28px 0px 0px;
+    }
+
+    .advantage-star {
+        padding: 0px;
+        margin-bottom: 13px;
+    }
+
+    .star {
+        padding: 0px;
+        line-height: 15px;
+    }
+
+    .advantage-3d {
+        width: 300px;
+    }
+
+    .footer {
+        padding: 20px 75px 33px 75px;
+    }
+
+    .footer-information {
+        margin-right: 10px;
+    }
+
+    .footer-logo {
+        margin: 29px 38px 0 0;
+        max-width: 142px;
+    }
+
+    .footer-col-content {
+        margin-top: 22px;
+        max-width: 176px;
+    }
+
+    .footer-ur-data {
+        margin: 15px 0 0 0;
+        line-height: 15px;
+    }
+
+    .footer-ur-data * {
+        line-height: 15px;
+    }
+
+    .footer-projects {
+        margin: 0 10px 0 0;
+        max-width: 160px;
+    }
+
+    .projects-text {
+        margin-bottom: 5px;
+        line-height: 15px;
+    }
+
+    .projects-img {
+        max-width: 50px;
+    }
+
+    .project1 {
+        margin-right: 5px;
+    }
+
+    .project2 {
+        margin-right: 5px;
+    }
+
+    .footer-communication {
+        margin-top: 14px;
+    }
+
+    .footer-col-right {
+        margin: 3.03px 58px 0 0;
+    }
+
+    .phone-footer-text {
+        line-height: 15px;
+    }
+
+    .phone-footer-number {
+        line-height: 24px;
+    }
+
+    .footer-callback {
+        margin: 0 0 11px 0;
+        padding: 15px 36px 15px 36px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header {
+        padding: 30px 40px 30px 40px;
+    }
+
+    .header-wrapper * {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .header-logo {
+        margin-right: 10px;
+    }
+
+    .header-price-list {
+        width: 265px;
+        padding: 16.5px 15px 22.5px 17px;
+    }
+
+    .header-information {
+        margin: 0;
+    }
+
+    .social-networks {
+        margin-right: 0;
+    }
+
+    .social-networks-telegram {
+        margin-right: 10px;
+    }
+
+    .person-information {
+        right: 500px;
+    }
+
+    .footer {
+        padding: 20px 30px 30px 30px;
+    }
+
+    .footer-information {
+        margin-right: 0;
+    }
+
+    .footer-logo {
+        margin-right: 12px;
+    }
+
+    .footer-ur-data {
+        max-width: 143px;
+    }
+
+    .footer-projects {
+        margin: 0;
+    }
+
+    .footer-col-right {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .person-photo,
+    .person-information {
+        display: none;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .person-information-mobile {
+        display: block;
+        position: absolute;
+        right: 360px;
+        bottom: 245px;
+        max-width: 229px;
+    }
+
+    .person-photo-mobile {
+        display: flex;
+        justify-content: end;
+    }
+}    
+
+@media (max-width: 1150px) {
+    .header {
+        padding: 30px 90px;
+    }
+
+    .header-wrapper {
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    .header-information {   
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+
+    .header-logo {
+        margin-right: 30.12px;
+    }
+
+    .header-price-list {
+        width: 100%;
+        order: 1;
+        margin-top: 25px;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+
+    .content {
+        padding: 0;
+        margin: 0 auto;
+        border:none;
+        align-items: center;
+        text-align: center;
+        max-width: 690px;
+    }
+
+    .content-text {
+        align-self: flex-start;
+    }
+
+    .background-mobile {
+        display: block;
+        margin: 30px 0 30px 0;
+        max-width: 345px;
+        width: 100%;
+        height: 1px;
+        background-color: #0c1e2b;
+    }
+
+    .content-btn {
+        display: flex;
+        text-align: center;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .btn-text {
+        padding-left: 0;
+    }
+
+    .btn-arrows {
+        display: none;
+    }
+
+    .gettint-subtitle {
+        margin: 30px 179px 0 179px;
+        text-align: center;
+    }
+
+    .getting-adv {
+        display: grid;
+        margin: 50px 74px 30px 64px;
+        grid-template: 90px 117px/ 300px 300px;
+    }
+    
+    .getting-adv * {
+        margin: 0;
+    }
+
+    .advantage-creating,
+    .advantage-building {
+        margin-bottom: 30px;
+    }
+}    
+
+@media (max-width:768px) {
+    .content {
+        margin: 0 69px 45px 69px;
+    }
 }
