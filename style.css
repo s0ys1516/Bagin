@@ -279,6 +279,7 @@ h1 {
     position: absolute;
     bottom: 59px;
     right: 719px;
+    z-index: 1;
 }
 
 .person-profession,
