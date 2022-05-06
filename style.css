@@ -4,8 +4,35 @@
 /*# sourceMappingURL=style.min.css.map */
 
 @font-face {
-    font-family: Commissioner;
-    src: url(fonts/Commissioner/Commissioner-VariableFont_wght.ttf);
+    font-family: "Commissioner";
+    src: url(fonts/Commissioner/Commissioner-Regular.ttf);
+    src: url(fonts/Commissioner/Commissioner-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Commissioner";
+    src: url(fonts/Commissioner/Commissioner-SemiBold.ttf);
+    src: url(fonts/Commissioner/Commissioner-SemiBold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Commissioner";
+    src: url(fonts/Commissioner/Commissioner-Bold.ttf);
+    src: url(fonts/Commissioner/Commissioner-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Commissioner";
+    src: url(fonts/Commissioner/Commissioner-ExtraBold.ttf);
+    src: url(fonts/Commissioner/Commissioner-ExtraBold.woff) format('woff');
+    font-weight: 800;
+    font-style: normal;
 }
 
 .yellow_bcg {
@@ -68,7 +95,7 @@ body {
     background-color: #fff;
     white-space: nowrap;
     width: min-content;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .price-list-text {
@@ -85,8 +112,7 @@ body {
     width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow: scroll;
+    overflow: auto;
 }
 .social-networks-text {
     margin-bottom:15px;
@@ -138,7 +164,7 @@ body {
 .header-col-last {
     margin-top: 6px;
     text-align: center;
-    overflow: scroll
+    overflow: auto
 }
 
 .phone-text {
@@ -199,6 +225,7 @@ body {
     border-left: 1px solid #0c1e2b;
     text-align: left;
     vertical-align: center;
+    min-height: 508px;
     padding-top: 38px;
     padding-left: 69px;
     padding-bottom: 40px;
@@ -248,7 +275,7 @@ h1 {
     padding: 35.6px;
     padding-left: 35.5px;
     padding-right: 120px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 /* Кнопка */
@@ -471,7 +498,7 @@ h1 {
     margin-right: 93px;
     width: 100%;
     align-items: center;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .footer-communication {
@@ -652,6 +679,7 @@ h1 {
     .content {
         padding: 26.5px 0 42.5px 68px;
         margin:0 435px 134.5px 0;
+        min-height: 0px;
         border-left: 0.750018px solid #0c1e2b;
     }
 
@@ -901,6 +929,8 @@ h1 {
         display: flex;
         position: absolute;
         justify-content: end;
+        min-width: 444px;
+        right: 0px;
     }
 }    
 
@@ -1323,6 +1353,7 @@ h1 {
     .person-photo {
         display: flex;
         justify-content: end;
+        min-width: 257px;
     }
 
     .gettint-subtitle {

@@ -22,9 +22,6 @@
 	<!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="style.css">
 	<title>FirstIntegration</title>
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700;800&display=swap');
-	</style>
 </head>
 
 <body>
@@ -97,10 +94,13 @@
 						</div>
 					</div>
 					<div class="person-photo">
-						<picture alt="Проектировщик Багин Сергей" width="740px" height="741px">
-							<img src="img/content/bagin.jpg">
-							<source srcset="img/content/bagin-mobile.jpg" media="(max-width: 1350px)">
-							<source srcset="img/content/bagin-mobile-360.jpg" media="(max-width: 740px)">
+						<picture>
+							<source srcset="img/content/bagin.jpg 1x, img/content/bagin_2x.jpg 2x"
+								media="(min-width: 1300px)">
+							<source srcset="img/content/bagin-mobile.jpg 1x, img/content/bagin-mobile_2x.jpg 2x"
+								media="(min-width: 740px)">
+							<img src="img/content/bagin-mobile-360.jpg 1x, img/content/bagin-mobile-360_2x.jpg 2x"
+								alt="Проектировщик Багин Сергей">
 						</picture>
 					</div>
 				</div>
